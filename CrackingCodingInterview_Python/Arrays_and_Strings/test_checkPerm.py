@@ -9,5 +9,7 @@ class TestCheckPerm(unittest.TestCase):
 	def test_checkPerm(self):
 		self.assertEqual(checkPerm('hi','hello'), False)
 		self.assertEqual(checkPerm('god','dog'), True)
+		self.assertEqual(checkPerm2('hi','hello'), False)
+		self.assertEqual(checkPerm2('god','dog'), True)
 
 		
