@@ -27,7 +27,7 @@ def isUnique2(word):
 	return True
 
 """
-Test Cases
+Test Cases, master edit
 """
 
 print(isUnique('cat'))
