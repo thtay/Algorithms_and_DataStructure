@@ -77,7 +77,7 @@ def anagramSolution1(s1, s2):
 
     if len(s1_count) != len(s2_count):
         return False
-
+    # Add some comments
     for s1c in s1_count:
         if s1_count[s1c] != s2_count[s1c]:
             return False
