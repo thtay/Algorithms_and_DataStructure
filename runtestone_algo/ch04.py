@@ -8,10 +8,12 @@ class Stack:
     def push(self, item):
         self.items.append(item)
 
-    def pop(self, item):
+    def pop(self):
         return self.items.pop()
 
     def peek(self):
+        if self.isEmpty():
+            return None
         return self.items[len(self.items) - 1]
 
     def size(self):
