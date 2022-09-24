@@ -1,6 +1,12 @@
 Python example for minimum window problem (hard)
 https://leetcode.com/problems/minimum-window-substring
 
+General algorithm for minimum window is as follows
+`
+1. Use two pointers: start and end to represent a window.
+2. Move end to find a valid window.
+3. When a valid window is found, move start to find a smaller window.
+
 ```python
 
 class Solution(object):
