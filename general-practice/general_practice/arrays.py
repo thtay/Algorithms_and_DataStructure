@@ -35,7 +35,7 @@ def lengthOfLongestSubstring(s):
         if len(s) == 1:
             return 1
         while lead < length:
-            print(unique)
+            # print(unique)
             if s[lead] in unique:
                 if len(unique) > curr_max:
                     curr_max = len(unique)
@@ -45,7 +45,7 @@ def lengthOfLongestSubstring(s):
             else:
                 unique.add(s[lead])
                 lead += 1
-            print(unique)
+            # print(unique)
         curr_max = max(curr_max, len(unique))
         return curr_max
 
@@ -84,4 +84,20 @@ def minSubArrayLen(target, nums):
     :param nums: The list of nums to use
     :type nums: list
     """
-    pass
+    # lead = 0
+    # trail = 0
+    # min_len = 0
+    # current_sum = 0
+
+    # if len(nums) == 0:
+    #     return 0
+    # if len(nums) == 1:
+    #     return 1
+
+    # while lead < target:
+    #     current_sum += nums[lead]
+    #     if current_sum > target:
+    #         return min_len
+    #     else:
+
+
