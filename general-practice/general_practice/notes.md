@@ -1,14 +1,20 @@
+# Notes for Alogirthm
+
+## Arrays
+
 Python example for minimum window problem (hard)
 https://leetcode.com/problems/minimum-window-substring
 
-General algorithm for minimum window is as follows
+### General algorithm for minimum window is as follows
+
 `
+
 1. Use two pointers: start and end to represent a window.
 2. Move end to find a valid window.
 3. When a valid window is found, move start to find a smaller window.
 
 ```python
-
+# python
 class Solution(object):
     def min_window(self, s, t):
         """
@@ -73,4 +79,23 @@ class Solution(object):
             return ""
         else:
             return s[min_window_start:min_window_start + min_window_length]
+```
+
+### General Algorithm for two pointer approach
+
+```java
+// Java
+public void reverse(char[] str) {
+    int i = 0, j = str.length - 1;
+    while (i < j) {
+        swap(str, i, j);
+        i++;
+        j--;
+    }
+}
+private void swap(char[] str, int i, int j) {
+    char temp = str[i];
+    str[i] = str[j];
+    str[j] = temp;
+}
 ```
